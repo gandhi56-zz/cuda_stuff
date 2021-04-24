@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <cuda_runtime.h>
 
@@ -40,7 +39,7 @@ void vectorAddOnDevice(float* a, float* b, float* c, const int n){
         c[idx] = a[idx] + b[idx];
 }
 
-int run(void){
+int VecAdd::run(void){
     // set up device
     int dev = 0;
     cudaDeviceProp deviceProp;

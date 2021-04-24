@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "VecAdd/VecAdd.h"
+#include "DeviceQuery/DeviceQuery.h"
 int main(){
-    run();
+    // VecAdd::run();
+    SimpleDeviceQuery::run();
     return 0;
 }

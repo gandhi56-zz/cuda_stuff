@@ -12,4 +12,6 @@
     }                                                                                   \
 }
 
-int run(void);
+namespace VecAdd{
+    int run(void);
+};  // end namespace VecAdd
