@@ -5,6 +5,9 @@ set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 set(LIB_DIR "${PROJECT_SOURCE_DIR}/lib")
 set(BIN_DIR "${PROJECT_SOURCE_DIR}/bin")
 
+file(MAKE_DIRECTORY ${LIB_DIR})
+file(MAKE_DIRECTORY ${BIN_DIR})
+
 add_library(VecAdd SHARED ${SRC_DIR}/VecAdd/VecAdd.cu)
 set_target_properties(VecAdd PROPERTIES 
     CUDA_SEPARABLE_COMPILATION ON
