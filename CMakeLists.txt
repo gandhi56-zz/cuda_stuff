@@ -32,7 +32,7 @@ set_target_properties(ImageBlur PROPERTIES
 # Driver executable -------------------------------------------------------------- #
 add_executable(driver ${SRC_DIR}/driver.cpp)
 link_directories(driver "${PROJECT_SOURCE_DIR}/lib")
-target_link_libraries(driver VecAdd SimpleDeviceQuery ImageBlur)
+target_link_libraries(driver VecAdd SimpleDeviceQuery ImageBlur )
 set_target_properties(driver PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${BIN_DIR}"
 )
